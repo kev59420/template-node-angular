@@ -1,0 +1,14 @@
+#login-block{
+  display: flex;
+  width: 500px;
+  background-color: white;
+  flex-flow: column;
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 10px;
+}
+#block-dashboard{
+  display: flex;
+  justify-content: space-around;
+}

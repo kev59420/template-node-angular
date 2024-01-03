@@ -1,0 +1,35 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Nest Framework",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start:debug",
+        "--",
+        "--inspect-brk"
+      ],
+      "envFile": "${workspaceFolder}/backend/.env",
+      "autoAttachChildProcesses": true,
+      "restart": true,
+      "cwd": "${workspaceFolder}/backend",
+      "sourceMaps": true,
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+    },
+
+    {
+      "name": "debug angular",
+      "type": "chrome",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/frontend",
+      "webRoot": "${workspaceFolder}/frontend",
+      "preLaunchTask": "npm: start-angular",
+      "url": "http://localhost:4200/"
+    },
+  ]
+}

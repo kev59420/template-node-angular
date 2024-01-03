@@ -1,0 +1,20 @@
+@import "../../../../styles/colors.scss";
+.success{
+    background-color: $green;
+    color: $white;
+    
+}
+.sncackBar{
+    border-radius: 4px;
+    font-size: 400;
+    padding: 4px;
+}
+.error{
+    background-color: $red;
+    color: $white;
+}
+
+.info{
+    background-color: $blue;
+    color: $or;
+}
