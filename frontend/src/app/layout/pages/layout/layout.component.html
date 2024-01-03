@@ -1,0 +1,4 @@
+<ng-container *ngIf="this.authState && this.authState?.isAuthenticated()">
+  <app-navbar></app-navbar>
+</ng-container>
+<router-outlet></router-outlet>

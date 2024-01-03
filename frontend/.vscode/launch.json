@@ -1,0 +1,15 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug angular",
+      "type": "chrome",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "npm: start-angular",
+      "url": "http://localhost:4200/"
+    },
+  ]
+}

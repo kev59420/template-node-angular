@@ -1,0 +1,9 @@
+<div class="d-flex sncackBar" [ngClass]="{ 'success' : 'success', 'error' : 'error', 'info' : 'info'}[data.type]">
+    <span matSnackBarLabel>
+        {{ data.content }}
+    </span>
+    <span matSnackBarActions>
+        <span matSnackBarAction class="material-icons cursor-pointer" (click)="snackBarRef.dismissWithAction()">close</span>
+    </span>
+</div>
+  

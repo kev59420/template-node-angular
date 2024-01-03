@@ -1,0 +1,14 @@
+.item-app{
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px 0px inset black;
+  width: 200px;
+  height: 200px;
+  img{
+    align-self: center;
+    width: 100%;
+  }
+}

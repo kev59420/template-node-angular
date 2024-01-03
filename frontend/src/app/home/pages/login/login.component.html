@@ -1,0 +1,17 @@
+<div id="block-dashboard">
+  <form id="login-block" [formGroup]="authForm" (ngSubmit)="submitForm()">
+      <h2 class="text-center">Se connecter</h2>
+      <mat-form-field class="flex-grow-1" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [formControl]=" this.emailForm" [errorStateMatcher]="matcher" placeholder="Rentrer une adresse Email Valide">
+          <mat-error *ngIf="this.emailForm.hasError('required')">L'adresse email est requise</mat-error>
+          <mat-error *ngIf="!this.emailForm.hasError('required') && this.emailForm.hasError('emailError')">Entrer une adresse email valide</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput [formControl]=" this.passwordForm" [errorStateMatcher]="matcher" placeholder="Rentrer un password">
+          <mat-error *ngIf="this.passwordForm.hasError('required')">Le mot de passe ne peut être vide</mat-error>
+      </mat-form-field>
+      <button type="submit" class="btn btn-primary" >Connection</button>
+  </form>
+</div>

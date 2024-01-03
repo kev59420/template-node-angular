@@ -1,0 +1,5 @@
+
+export enum AuthType{
+  AUTHENTICATED = "AUTHENTICATED",
+  ANONYMOUS= "ANONYMOUS"
+}
